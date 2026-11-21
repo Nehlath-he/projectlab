@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ProjectLab — guided, hands-on Data Science and AI project studio.">
+  <title>ProjectLab | Build. Experiment. Deploy.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ProjectLab home"><span class="brand-mark">P<span>.</span></span><span>project<span class="brand-light">lab</span></span></a>
+    <nav class="topnav"><a href="#projects">Projects</a><a href="#how-it-works">How it works</a><a href="#resources">Resources</a></nav>
+    <div class="top-actions"><button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☼</button><a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><button class="mobile-menu" id="mobileMenu">☰</button></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR HANDS-ON PROJECT STUDIO</div>
+        <h1>Don't just learn it.<br><span class="gradient-text">Build it.</span> Ship it.</h1>
+        <p class="hero-sub">A guided workspace to turn concepts into working Data Science and AI projects — one practical step at a time.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore projects <span>↗</span></a><a class="btn btn-ghost" href="#how-it-works"><span class="play">▶</span> How it works</a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>Py</span><span>ML</span><span>AI</span></div><span>Learn by building · Beginner-friendly · Industry-oriented</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="visual-core"><div class="core-icon">⌘</div><strong>PROJECT<br>IN PROGRESS</strong><small>IDEA → WORKING APP</small><div class="mini-progress"><i></i></div></div>
+        <div class="float-card float-python"><b class="float-icon purple">Py</b><span><strong>Python + SQL</strong><small>Build your foundation</small></span><em>01</em></div>
+        <div class="float-card float-ml"><b class="float-icon blue">ML</b><span><strong>Machine Learning</strong><small>Train. Evaluate. Improve.</small></span><em>02</em></div>
+        <div class="float-card float-rag"><b class="float-icon green">✳</b><span><strong>RAG Assistant</strong><small>Connect data to AI</small></span><em>04</em></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+      </div>
+    </section>
+    <section class="stats-strip">
+      <div><strong>04</strong><span>Guided project tracks</span></div><div><strong>01</strong><span>Step-by-step journey</span></div><div><strong>∞</strong><span>Room to experiment</span></div><div><strong>100%</strong><span>Learn by doing</span></div>
+    </section>
+    <section class="section" id="projects">
+      <div class="section-heading"><div><div class="eyebrow">THE PROJECT LIBRARY</div><h2>Choose your next build.</h2><p>Pick a project, follow the roadmap, and create something you can confidently explain.</p></div><div class="project-tools"><label class="search-box"><span>⌕</span><input id="projectSearch" type="search" placeholder="Search projects or skills…"></label><select id="levelFilter" aria-label="Filter by level"><option value="all">All levels</option><option value="Beginner">Beginner</option><option value="Intermediate">Intermediate</option><option value="Advanced">Advanced</option></select></div></div>
+      <div class="project-grid" id="projectGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>No projects match your search. Try another keyword.</div>
+    </section>
+    <section class="journey-section" id="how-it-works">
+      <div class="journey-intro"><div class="eyebrow">YOUR BUILDING WORKFLOW</div><h2>From first line<br>to <span class="gradient-text">final deployment.</span></h2><p>Every project follows a consistent learning experience, so you always know what to do next — and why it matters.</p></div>
+      <div class="journey-steps">
+        <article><span class="step-no">01</span><div class="step-symbol">◉</div><h3>Understand</h3><p>Know the problem, business context, expected outcome and tools.</p></article>
+        <article><span class="step-no">02</span><div class="step-symbol">⌘</div><h3>Build</h3><p>Follow guided notebooks, run code and understand each output.</p></article>
+        <article><span class="step-no">03</span><div class="step-symbol">↗</div><h3>Engineer</h3><p>Refactor, test, track experiments and structure your application.</p></article>
+        <article><span class="step-no">04</span><div class="step-symbol">✦</div><h3>Deploy</h3><p>Package your work, deploy it and share your working project.</p></article>
+      </div>
+    </section>
+    <section class="resources-section" id="resources">
+      <div><div class="eyebrow">YOUR TOOLKIT</div><h2>Everything you need<br>to keep moving.</h2><p>Use these resources alongside the guided project steps.</p></div>
+      <div class="resource-grid">
+        <a class="resource-card" href="https://colab.research.google.com/" target="_blank" rel="noreferrer"><span class="resource-icon yellow">▣</span><div><strong>Google Colab</strong><small>Run notebooks in your browser</small></div><span class="arrow">↗</span></a>
+        <a class="resource-card" href="https://github.com/" target="_blank" rel="noreferrer"><span class="resource-icon white">⌘</span><div><strong>GitHub</strong><small>Explore and manage source code</small></div><span class="arrow">↗</span></a>
+        <a class="resource-card" href="https://streamlit.io/" target="_blank" rel="noreferrer"><span class="resource-icon red">▤</span><div><strong>Streamlit</strong><small>Turn Python into interactive apps</small></div><span class="arrow">↗</span></a>
+        <a class="resource-card" href="https://mlflow.org/" target="_blank" rel="noreferrer"><span class="resource-icon green">◈</span><div><strong>MLflow</strong><small>Track and manage experiments</small></div><span class="arrow">↗</span></a>
+      </div>
+    </section>
+    <footer><a class="brand" href="#"><span class="brand-mark">P<span>.</span></span><span>project<span class="brand-light">lab</span></span></a><span>Build with curiosity. Learn through practice.</span><span class="footer-note">A guided learning initiative</span></footer>
+  </main>
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true"><section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div id="modalContent"></div></section></div>
+  <script src="app.js"></script>
+</body></html>
